@@ -1,0 +1,25 @@
+:root {
+  /* widths */
+  --vw-mobile: 375px;
+  --vw-desktop: 1440px;
+
+  /* primary colors */
+  --color-purple: hsl(259, 100%, 65%);
+  --color-light-red: hsl(0, 100%, 67%);
+
+  /* neutral colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-off-white: hsl(0, 0%, 94%);
+  --color-light-gray: hsl(0, 0%, 86%);
+  --color-smokey-gray: hsl(0, 1%, 44%);
+  --color-black: hsl(0, 0%, 8%);
+
+  /* typography */
+  --typography-inputs: 32px;
+
+  /* fonts */
+  --font-main: 'Poppins', sans-serif;
+
+  /* transitions */
+  --transition: 150ms all ease-in-out;
+}

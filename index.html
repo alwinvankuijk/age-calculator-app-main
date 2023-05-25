@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="calculator">
+        <div class="calculator__input-group">
+          <div class="input-group__input">
+            <label for="day" class="input__label">day</label>
+            <input type="number" name="day" placeholder="dd" id="day-input" />
+            <label for="day" class="input__error" id="day-error"></label>
+          </div>
+          <div class="input-group__input">
+            <label for="month" class="input__label">month</label>
+            <input
+              type="number"
+              name="month"
+              placeholder="mm"
+              id="month-input"
+            />
+            <label for="month" class="input__error" id="month-error"></label>
+          </div>
+          <div class="input-group__input">
+            <label for="year" class="input__label">year</label>
+            <input
+              type="number"
+              name="year"
+              placeholder="yyyy"
+              id="year-input"
+            />
+            <label for="month" class="input__error" id="year-error"></label>
+          </div>
+        </div>
+        <div class="calculator__button-group">
+          <div class="button-group__divider"></div>
+          <button type="submit" id="calculate-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="44"
+              viewBox="0 0 46 44"
+            >
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="calculator__age">
+          <div class="age__part">
+            <span id="years">--</span>
+            <p>years</p>
+          </div>
+          <div class="age__part">
+            <span id="months">--</span>
+            <p>months</p>
+          </div>
+          <div class="age__part">
+            <span id="days">--</span>
+            <p>days</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alwin van Kuijk</a>.
+      </div>
+    </div>
+  </body>
+
+  <script src="./app.js"></script>
+</html>
