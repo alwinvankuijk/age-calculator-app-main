@@ -24,6 +24,12 @@ function resetErrors() {
   yearError.innerText = null;
 }
 
+function resetBirthday() {
+  daysText.innerText = '--';
+  monthsText.innerText = '--';
+  yearsText.innerText = '--';
+}
+
 function validateInputs(day, month, year) {
   resetErrors();
 
@@ -33,9 +39,12 @@ function validateInputs(day, month, year) {
 
   if (day > 31 || (day < 1 && day !== ''))
     dayError.innerText = ERROR_MESSAGES.invalidDay;
+  if ((month == 4 || month == 6 || month == 9 || month == 11) && day > 30)
+    dayError.innerHTML = ERROR_MESSAGES.invalidDay;
+  if (month == 2 && day > 28) dayError.innerHTML = ERROR_MESSAGES.invalidDay;
   if (month > 12 || (day < 1 && day !== ''))
     monthError.innerText = ERROR_MESSAGES.invalidMonth;
-  if (year > new Date().getFullYear() || (year < 1 && year !== ''))
+  if (year > new Date().getFullYear() || (year < 1 && year != ''))
     yearError.innerText = ERROR_MESSAGES.invalidYear;
 }
 
@@ -66,5 +75,9 @@ function calculateAge(day, month, year) {
 }
 
 button.addEventListener('click', () =>
-  calculateAge(dayInput.value, monthInput.value, yearInput.value)
+  calculateAge(
+    parseInt(dayInput.value),
+    parseInt(monthInput.value),
+    parseInt(yearInput.value)
+  )
 );
