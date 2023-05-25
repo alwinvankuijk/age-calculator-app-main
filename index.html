@@ -18,8 +18,8 @@
   </head>
   <body>
     <div id="wrapper">
-      <div class="calculator">
-        <div class="calculator__input-group">
+      <main class="calculator">
+        <section class="calculator__input-group">
           <div class="input-group__input">
             <label for="day" class="input__label">day</label>
             <input type="number" name="day" placeholder="dd" id="day-input" />
@@ -45,7 +45,7 @@
             />
             <label for="month" class="input__error" id="year-error"></label>
           </div>
-        </div>
+        </section>
         <div class="calculator__button-group">
           <div class="button-group__divider"></div>
           <button type="submit" id="calculate-button" aria-label="Calculate">
@@ -63,7 +63,7 @@
             </svg>
           </button>
         </div>
-        <div class="calculator__age">
+        <section class="calculator__age">
           <div class="age__part">
             <span id="years">--</span>
             <p>years</p>
@@ -76,15 +76,15 @@
             <span id="days">--</span>
             <p>days</p>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
 
-      <div class="attribution">
+      <footer class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Alwin van Kuijk</a>.
-      </div>
+      </footer>
     </div>
   </body>
 
